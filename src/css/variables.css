@@ -1,0 +1,27 @@
+:root {
+  font-family: 'DM Sans';
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  /* Colors text*/
+  --primary-cl-text: #1b1b1b;
+  --primary-cl-text-40: rgba(252, 249, 249, 0.4);
+
+  --secondary-cl-text: #f6f6f6;
+  --secondary-cl-text-40: rgba(246, 246, 246, 0.4);
+  --secondary-cl-text-60: rgba(246, 246, 246, 0.6);
+
+  /* Colors background*/
+
+  --background-primary: #e8e8e8;
+  --background-secondary: #fff;
+  --background-accent: #7e847f;
+  --background-button-active: #5f6560;
+
+  /* Colors raiting */
+  --raiting-gray: rgba(27, 27, 27, 0.2);
+  --raiting-orange: #eea10c;
+
+  /* Transition */
+  --trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
