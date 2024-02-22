@@ -2,83 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project_test/favicon.svg" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/project_test/assets/favicon-8454a701.svg"
+      type="image/svg+xml"
+    />
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <!-- Content -->
+    <meta
+      name="description"
+      content="Transform your physique and embrace a healthier lifestyle with our comprehensive fitness and nutrition support."
+    />
+    <title>Project</title>
+    <!-- Fonts -->
+    
+    <!-- Custom styles -->
     
     <script type="module" crossorigin src="/project_test/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project_test/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/project_test/assets/vendor-0cb09735.js">
+    <link rel="stylesheet" href="/project_test/assets/index-e2010bff.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project_test/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+    <section>
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
+    <!-- ============= Forma =============== -->
+    <div class="exercises-name">
+      <h2 class="exercises-title">Exercises /</h2>
+      <p class="exercises-next">Waist</p>
     </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project_test/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
+    <button></button>
+    <button></button>
+    <button></button>
+    <form id="form-exercises" class="form-exercises">
+      <input
+        class="form-input"
+        type="text"
+        name="text"
+        required
+        placeholder="Search"
       />
-    </div>
+      <button class="button-search form-btn-search" type="submit">
+        <svg class="icon-search" width="18" height="18">
+          <use href="/project_test/assets/icons_sprite-f1718e4c.svg#icon-search"></use>
+        </svg>
+      </button>
+      <button class="button-delete form-btn-search">
+        <svg class="icon-delete" width="12" height="12">
+          <use href="/project_test/assets/icons_sprite-f1718e4c.svg#icon-closed"></use>
+        </svg>
+      </button>
+    </form>
+    <ul class="exercises-search"></ul>
   </div>
 </section>
 
+    
 
     
   </body>
