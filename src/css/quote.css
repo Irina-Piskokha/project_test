@@ -1,0 +1,55 @@
+.quote {
+  padding-top: 16px;
+}
+
+.container-quote {
+  display: flex;
+}
+
+.quote-left {
+  position: relative;
+
+  width: 704px;
+  padding: 64px 64px 64px 114px;
+  border-radius: 50px;
+  background: var(--background-accent);
+}
+
+.qoute-inverted-commas {
+  position: absolute;
+  top: 32px;
+  right: 65px;
+}
+
+.qoute-run-man {
+  position: absolute;
+  top: 64px;
+  left: 64px;
+}
+
+.quote-title {
+  color: var(--secondary-cl-text);
+  font-weight: 500;
+  line-height: 1.33;
+
+  margin-bottom: 16px;
+}
+
+.quote-text {
+  color: var(--secondary-cl-text-60);
+  padding-bottom: 24px;
+}
+
+.qoute-name {
+  color: var(--secondary-cl-text);
+  font-weight: 500;
+}
+
+.quote-right {
+  width: 704px;
+  background-image: url('../img/quote-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+}
