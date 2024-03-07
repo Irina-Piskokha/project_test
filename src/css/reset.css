@@ -50,6 +50,7 @@ button {
   color: currentColor;
   cursor: pointer;
   padding: 0;
+  border: none;
 }
 
 img {
@@ -60,4 +61,21 @@ img {
 
 address {
   font-style: normal;
+}
+
+.btn-grey {
+  display: block;
+  padding: 12px 157px;
+
+  color: var(--secondary-cl-text);
+  line-height: 1.5;
+  border-radius: 30px;
+  background-color: var(--background-accent);
+
+  transition: background-color var(--trans);
+}
+
+.btn-grey:hover,
+.btn-grey:focus {
+  background-color: var(--cl-hover-item);
 }

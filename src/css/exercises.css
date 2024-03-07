@@ -42,6 +42,13 @@
   padding: 10px 20px;
 
   line-height: 1.5;
+
+  transition: background-color var(--trans);
+}
+
+.exercises-btn-active:hover,
+.exercises-btn-active:focus {
+  background-color: var(--cl-hover-item);
 }
 
 .exercises-list {
@@ -60,9 +67,6 @@
 
   border-radius: 12px;
   border: 1px solid var(--secondary-cl-text-30);
-}
-
-.exercises-link {
 }
 
 .exercises-item-img {

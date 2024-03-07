@@ -76,10 +76,13 @@
   padding: 8px;
   border-radius: 10px;
   border: 1px solid var(--cl-item-border);
+
+  transition: border-color var(--trans);
 }
 
 .social-icon {
   fill: var(--cl-item);
+  transition: fill var(--trans);
 }
 
 .social-link:hover,

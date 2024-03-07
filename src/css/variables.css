@@ -18,6 +18,7 @@
   /* Colors raiting */
   --raiting-gray-20: rgba(27, 27, 27, 0.2);
   --raiting-gray-40: rgba(27, 27, 27, 0.4);
+  --raiting-gray-60: rgba(27, 27, 27, 0.6);
   --raiting-orange: #eea10c;
 
   /* Colors item */
@@ -27,5 +28,5 @@
   --cl-hover-border: rgba(95, 101, 96, 0.2);
 
   /* Transition */
-  --trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --trans: 250ms ease;
 }

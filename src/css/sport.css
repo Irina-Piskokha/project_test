@@ -1,0 +1,62 @@
+.sport {
+  padding-top: 16px;
+}
+
+.sport-container {
+  display: flex;
+}
+
+.sport-left {
+  width: 704px;
+  border-radius: 50px;
+  background-image: url('../img/sport.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+}
+
+.sport-right {
+  position: relative;
+  width: 704px;
+  padding: 64px 64px 64px 114px;
+  border-radius: 50px;
+  background: var(--primary-cl-text);
+
+  color: var(--secondary-cl-text-60);
+}
+
+.sport-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 65px;
+  left: 64px;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #313131;
+}
+
+.sport-icon {
+  fill: var(--secondary-cl-text);
+}
+
+.sport-title {
+  color: var(--secondary-cl-text);
+  font-weight: 500;
+  line-height: 1.33;
+  margin-bottom: 2px;
+}
+
+.sport-span {
+  font-size: 14px;
+  line-height: 1.28;
+  margin-bottom: 25px;
+}
+
+.sport-text {
+}
