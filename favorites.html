@@ -18,10 +18,15 @@
     <title>Project</title>
     <!-- Fonts -->
     
+    <!-- Modern normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
     <!-- Custom styles -->
     
-    <script type="module" crossorigin src="/project_test/assets/main-fcaaa416.js"></script>
-    <link rel="stylesheet" href="/project_test/assets/main-429237ac.css">
+    <script type="module" crossorigin src="/project_test/assets/main-cf01a0ea.js"></script>
+    <link rel="stylesheet" href="/project_test/assets/main-dcf1247a.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -30,8 +35,10 @@
     <nav class="header-nav">
       <a href="#header" class="logo">energy.flow</a>
       <div class="header-menu">
-        <a href="#header" class="header-btn header-btn-home">Home</a>
-        <a href="#" class="header-btn header-btn-favorites">Favorites</a>
+        <a href="../index.html" class="header-btn header-btn-home">Home</a>
+        <a href="./favorites.html" class="header-btn header-btn-favorites"
+          >Favorites</a
+        >
       </div>
       <address class="social">
         <ul class="social-list">
@@ -42,7 +49,7 @@
               target="_blank"
             >
               <svg class="social-icon" width="28" height="28">
-                <use href="../img/icons_sprite.svg#icon-facebook"></use>
+                <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -53,7 +60,7 @@
               target="_blank"
             >
               <svg class="social-icon" width="28" height="28">
-                <use href="../img/icons_sprite.svg#icon-instagram"></use>
+                <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -64,7 +71,7 @@
               target="_blank"
             >
               <svg class="social-icon" width="28" height="28">
-                <use href="../img/icons_sprite.svg#icon-youtube"></use>
+                <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
@@ -74,6 +81,83 @@
   </div>
 </header>
 
+    <section id="favorites" class="favorites">
+  <div class="container">
+    <div class="favorites-quote">
+      <div class="favorites-quote-left">
+        <span class="qoute-inverted-commas">
+            <svg class="qoute-icon" width="48" height="48">
+              <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-inverted-commas"></use>
+            </svg>
+          </span>
+          <span class="qoute-run-man">
+            <svg class="qoute-icon" width="32" height="32">
+              <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-run-man"></use>
+            </svg>
+          </span>
+          <h2 class="quote-title">Quote of the day</h2>
+          <p class="quote-text">
+            A lot of times I find that people who are blessed with the most talent
+            don't ever develop that attitude, and the ones who aren't blessed in
+            that way are the most competitive and have the biggest heart.
+          </p>
+          <p class="qoute-name">Tom Brady</p>
+        </div>
+        <div class="favorites-quote-right">
+            <div class="favorites-quote-img"></div>
+            <div class="favorites-quote-message">
+                <svg class="favorites-quote-icon" width="20" height="20">
+                  <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-fluent"></use>
+                </svg>
+                <p class="favorites-quote-title">110 min</p>
+                <p class="favorites-quote-text">Daily norm of sports</p>
+            </div>
+        </div>
+      </div>
+      <div class="favorites-main">
+        <h2 class="favorites-title">Favorites</h2>
+        <ul class="favorites-list">
+            <li class="favorites-item">
+                <div class="item-head-wrap">
+                    <p class="favorites-category">WORKOUT</p>
+                    <button type="button" class="favorites-btn-del">
+                        <svg class="favorites-icon-del" width="16" height="16">
+                            <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-trash"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="favorites-btn-start">Start
+                        <svg class="favorites-btn-icon" width="16" height="16">
+                          <use href="../img/icons_sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="item-main-wrap">
+                    <svg class="favorites-icon-run" width="24" height="24">
+                      <use href="/project_test/assets/icons_sprite-bf2f7b1f.svg#icon-run-man"></use>
+                    </svg>
+                    <h3 class="item-title">Air bike</h3>
+                </div>
+                <div class="item-footer-wrap">
+                    <div class="item-footer-flex">
+                        <p class="item-footer-name">Burned calories:</p>
+                        <p class="item-footer-text">312 / 3 min</p>
+                    </div>
+                    <div class="item-footer-flex">
+                        <p class="item-footer-name">Body part:</p>
+                        <p class="item-footer-text">Waist</p>
+                    </div>
+                    <div class="item-footer-flex">
+                        <p class="item-footer-name">Target:</p>
+                        <p class="item-footer-text">Abs</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 
     
   </body>
