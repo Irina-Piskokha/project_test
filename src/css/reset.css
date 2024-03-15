@@ -11,6 +11,10 @@ body {
   padding: 0;
 }
 
+.hide {
+  display: none;
+}
+
 input,
 form {
   padding: 0;
@@ -18,9 +22,23 @@ form {
 }
 
 .container {
-  width: 1408px;
-  padding: 0 16px;
+  min-width: 320px;
+  max-width: 375px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1408px;
+  }
 }
 
 h1,
@@ -51,6 +69,7 @@ button {
   cursor: pointer;
   padding: 0;
   border: none;
+  background-color: transparent;
 }
 
 img {

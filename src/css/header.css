@@ -6,32 +6,98 @@
 }
 
 .container-height {
-  padding-top: 16px;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-height {
+    padding-top: 16px;
+  }
 }
 
 .header-nav {
   display: flex;
-  gap: 397px;
+  align-items: center;
+  gap: 177px;
+  padding: 20px 20px 0 20px;
+}
 
-  padding: 24px 48px 0 48px;
+@media only screen and (min-width: 768px) {
+  .header-nav {
+    gap: 0;
+    padding: 16px 32px 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-nav {
+    gap: 397px;
+    padding: 24px 48px 0 48px;
+  }
 }
 
 .logo {
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.13;
   letter-spacing: -0.02em;
 }
 
-.header-menu {
+@media only screen and (min-width: 768px) {
+  .logo {
+    font-size: 28px;
+    line-height: 1;
+    margin-right: 81px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    margin-right: 0px;
+  }
+}
+
+.header-mobile-btn {
   display: flex;
-  gap: 16px;
   align-items: center;
-  width: 211px;
-  height: 52px;
-  padding: 8px 16px;
-  border-radius: 60px;
-  background: var(--background-accent);
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-mobile-btn {
+    display: none;
+  }
+}
+
+.mobile-open-icon {
+  stroke: var(--background-accent);
+}
+
+.header-menu {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-menu {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 211px;
+    height: 52px;
+    padding: 8px 16px;
+    margin-right: 74px;
+    border-radius: 60px;
+    background: var(--background-accent);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header-menu {
+    margin-right: 0;
+  }
 }
 
 .header-btn {
@@ -56,6 +122,16 @@
 
 .header-btn-favorites {
   color: var(--secondary-cl-text);
+}
+
+.social {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .social {
+    display: block;
+  }
 }
 
 .social-list {
