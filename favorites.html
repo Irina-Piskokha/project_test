@@ -25,8 +25,9 @@
     />
     <!-- Custom styles -->
     
-    <script type="module" crossorigin src="/project_test/assets/main-2b55ff8c.js"></script>
-    <link rel="stylesheet" href="/project_test/assets/main-9f25f6ff.css">
+    <script type="module" crossorigin src="/project_test/assets/vendor-44c3de12.js"></script>
+    <script type="module" crossorigin src="/project_test/assets/main-c0239b78.js"></script>
+    <link rel="stylesheet" href="/project_test/assets/main-70ad7e8c.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -34,9 +35,15 @@
   <div class="container container-height">
     <nav class="header-nav">
       <a href="#header" class="logo">energy.flow</a>
-      <button class="header-mobile-btn">
+      <button
+        class="header-mobile-btn js-open-menu"
+        type="button"
+        aria-label="close"
+        aria-expanded="false"
+        aria-controls="navigation"
+      >
         <svg class="mobile-open-icon" width="32" height="16">
-          <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-mobile_menu"></use>
+          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-mobile_menu"></use>
         </svg>
       </button>
       <div class="header-menu">
@@ -54,7 +61,7 @@
               target="_blank"
             >
               <svg class="social-icon" width="28" height="28">
-                <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-facebook"></use>
+                <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -65,7 +72,7 @@
               target="_blank"
             >
               <svg class="social-icon" width="28" height="28">
-                <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-instagram"></use>
+                <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -76,13 +83,77 @@
               target="_blank"
             >
               <svg class="social-icon" width="28" height="28">
-                <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-youtube"></use>
+                <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
       </address>
     </nav>
+    <!-- Mobile menu -->
+    <div class="mob-menu-container js-menu-container" id="mobile-menu">
+      <a href="#header" class="mob-menu-logo">energy.flow</a>
+      <button class="mob-menu-btn-close js-close-menu" type="button">
+        <svg class="mob-menu-btn-close-icon" width="20" height="20">
+          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-mob_menu_close"></use>
+        </svg>
+      </button>
+      <ul class="mob-menu-link">
+        <li class="mob-menu-item">
+          <a href="#" class="mob-menu-link active">Home</a>
+        </li>
+        <li class="mob-menu-item">
+          <a href="#" class="mob-menu-link">Favorites</a>
+        </li>
+      </ul>
+      <ul class="mob-menu-social-list">
+        <li class="social-item">
+          <a
+            href="https://www.facebook.com/goITclub/"
+            class="social-link mob-menu-social-link"
+            target="_blank"
+          >
+            <svg
+              class="social-icon mob-menu-social-icon"
+              width="28"
+              height="28"
+            >
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.instagram.com/goitclub/"
+            class="social-link mob-menu-social-link"
+            target="_blank"
+          >
+            <svg
+              class="social-icon mob-menu-social-icon"
+              width="28"
+              height="28"
+            >
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            href="https://www.youtube.com/c/GoIT"
+            class="social-link mob-menu-social-link"
+            target="_blank"
+          >
+            <svg
+              class="social-icon mob-menu-social-icon"
+              width="28"
+              height="28"
+            >
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -92,12 +163,12 @@
       <div class="favorites-quote-left">
         <span class="qoute-inverted-commas">
             <svg class="qoute-icon" width="48" height="48">
-              <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-inverted-commas"></use>
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-inverted-commas"></use>
             </svg>
           </span>
           <span class="qoute-run-man">
             <svg class="qoute-icon" width="32" height="32">
-              <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-run-man"></use>
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-run-man"></use>
             </svg>
           </span>
           <h2 class="quote-title">Quote of the day</h2>
@@ -112,7 +183,7 @@
             <div class="favorites-quote-img"></div>
             <div class="favorites-quote-message">
                 <svg class="favorites-quote-icon" width="20" height="20">
-                  <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-fluent"></use>
+                  <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-fluent"></use>
                 </svg>
                 <p class="favorites-quote-title">110 min</p>
                 <p class="favorites-quote-text">Daily norm of sports</p>
@@ -127,18 +198,18 @@
                     <p class="favorites-category">WORKOUT</p>
                     <button type="button" class="favorites-btn-del">
                         <svg class="favorites-icon-del" width="16" height="16">
-                            <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-trash"></use>
+                            <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-trash"></use>
                         </svg>
                     </button>
                     <button type="button" class="favorites-btn-start">Start
                         <svg class="favorites-btn-icon" width="16" height="16">
-                          <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-arrow"></use>
+                          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-arrow"></use>
                         </svg>
                     </button>
                 </div>
                 <div class="item-main-wrap">
                     <svg class="favorites-icon-run" width="24" height="24">
-                      <use href="/project_test/assets/icons_sprite-19826d0e.svg#icon-run-man"></use>
+                      <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-run-man"></use>
                     </svg>
                     <h3 class="item-title">Air bike</h3>
                 </div>
