@@ -1,15 +1,13 @@
-.hero {
-  padding-top: 16px;
-}
-
 .hero-container {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-container {
     flex-direction: row;
+    padding-top: 16px;
   }
 }
 
@@ -20,7 +18,7 @@
   background-size: cover;
   background-position: center;
   width: 335px;
-  height: 387px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -28,7 +26,7 @@
     background-image: url('../img/bg_tab@1x.jpg');
     border-radius: 50px 0px 50px 50px;
     width: 248px;
-    height: 900px;
+    margin-bottom: 0;
   }
 }
 
@@ -36,7 +34,6 @@
   .hero-left {
     background-image: url('../img/bg_desk@1x.jpg');
     width: 704px;
-    height: 884px;
   }
 }
 
@@ -46,29 +43,26 @@
   flex-wrap: wrap;
   width: 199px;
 
-  margin-top: 319px;
-  margin-left: 10px;
+  margin: 319px 0 20px 10px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-left-list {
     gap: 8px;
-    margin-top: 764px;
-    margin-left: 20px;
+    margin: 764px 0 64px 20px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .hero-left-list {
-    margin-top: 784px;
-    margin-left: 48px;
+    margin: 784px 0 32px 48px;
   }
 }
 
 .hero-left-item {
   display: block;
   font-size: 12px;
-  line-height: 1.17;
+  line-height: 1.1;
   padding: 4px 10px;
 
   color: var(--secondary-cl-text);
