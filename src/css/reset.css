@@ -29,20 +29,20 @@ form {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
+    width: 335px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 736px;
     padding: 0 16px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
-    width: 1440px;
+    width: 1408px;
   }
 }
 
