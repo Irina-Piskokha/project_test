@@ -25,16 +25,15 @@
     />
     <!-- Custom styles -->
     
-    <script type="module" crossorigin src="/project_test/assets/vendor-b16939fb.js"></script>
-    <script type="module" crossorigin src="/project_test/assets/main-74b1892e.js"></script>
-    <link rel="stylesheet" href="/project_test/assets/main-47ecb117.css">
+    <script type="module" crossorigin src="/project_test/assets/main-5e51b57b.js"></script>
+    <link rel="stylesheet" href="/project_test/assets/main-239072f3.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <header id="header" class="header">
   <div class="container container-height">
     <nav class="header-nav">
-      <a href="#header" class="logo">energy.flow</a>
+      <a href="./index.html" class="logo">energy.flow</a>
       <button
         class="header-mobile-btn js-open-menu"
         type="button"
@@ -47,8 +46,14 @@
         </svg>
       </button>
       <div class="header-menu">
-        <a href="../index.html" class="header-btn header-btn-home">Home</a>
-        <a href="./favorites.html" class="header-btn header-btn-favorites"
+        <a
+          href="./index.html"
+          class="header-btn header-btn-home header-btn-margin"
+          >Home</a
+        >
+        <a
+          href="./favorites.html"
+          class="header-btn header-btn-favorites header-btn-favorites-active"
           >Favorites</a
         >
       </div>
@@ -91,11 +96,11 @@
       </address>
     </nav>
     <!-- Mobile menu -->
-    <div class="mob-menu-container js-menu-container" id="mobile-menu">
+    <!-- <div class="mob-menu-container js-menu-container" id="mobile-menu">
       <a href="#header" class="mob-menu-logo">energy.flow</a>
       <button class="mob-menu-btn-close js-close-menu" type="button">
         <svg class="mob-menu-btn-close-icon" width="20" height="20">
-          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-mob_menu_close"></use>
+          <use href="./img/icons_sprite.svg#icon-mob_menu_close"></use>
         </svg>
       </button>
       <ul class="mob-menu-link">
@@ -118,7 +123,7 @@
               width="28"
               height="28"
             >
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-facebook"></use>
+              <use href="./img/icons_sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -133,7 +138,7 @@
               width="28"
               height="28"
             >
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-instagram"></use>
+              <use href="./img/icons_sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -148,46 +153,41 @@
               width="28"
               height="28"
             >
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-youtube"></use>
+              <use href="./img/icons_sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </header>
 
     <section id="favorites" class="favorites">
   <div class="container">
     <div class="favorites-quote">
-      <div class="favorites-quote-left">
+      <div class="quote-left">
         <span class="qoute-inverted-commas">
-            <svg class="qoute-icon" width="48" height="48">
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-inverted-commas"></use>
-            </svg>
-          </span>
-          <span class="qoute-run-man">
-            <svg class="qoute-icon" width="32" height="32">
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-run-man"></use>
-            </svg>
-          </span>
-          <h2 class="quote-title">Quote of the day</h2>
-          <p class="quote-text">
-            A lot of times I find that people who are blessed with the most talent
-            don't ever develop that attitude, and the ones who aren't blessed in
-            that way are the most competitive and have the biggest heart.
-          </p>
-          <p class="qoute-name">Tom Brady</p>
-        </div>
-        <div class="favorites-quote-right">
-            <div class="favorites-quote-img"></div>
-            <div class="favorites-quote-message">
-                <svg class="favorites-quote-icon" width="20" height="20">
-                  <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-fluent"></use>
-                </svg>
-                <p class="favorites-quote-title">110 min</p>
-                <p class="favorites-quote-text">Daily norm of sports</p>
-            </div>
+          <svg class="qoute-icon">
+            <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-inverted-commas"></use>
+          </svg>
+        </span>
+        <span class="qoute-run-man">
+          <svg class="qoute-icon" width="32" height="32">
+            <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-run-man"></use>
+          </svg>
+        </span>
+        <h2 class="quote-title">Quote of the day</h2>
+        <div class="js-quote-wrap"></div>
+      </div>
+      <div class="favorites-quote-right">
+        <div class="favorites-quote-img"></div>
+          <div class="favorites-quote-message">
+              <svg class="favorites-quote-icon" width="20" height="20">
+                <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-fluent"></use>
+              </svg>
+              <p class="favorites-quote-title">110 min</p>
+              <p class="favorites-quote-text">Daily norm of sports</p>
+          </div>
         </div>
       </div>
       <div class="favorites-main">

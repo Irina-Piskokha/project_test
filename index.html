@@ -25,16 +25,15 @@
     />
     <!-- Custom styles -->
     
-    <script type="module" crossorigin src="/project_test/assets/vendor-b16939fb.js"></script>
-    <script type="module" crossorigin src="/project_test/assets/main-74b1892e.js"></script>
-    <link rel="stylesheet" href="/project_test/assets/main-47ecb117.css">
+    <script type="module" crossorigin src="/project_test/assets/main-5e51b57b.js"></script>
+    <link rel="stylesheet" href="/project_test/assets/main-239072f3.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <header id="header" class="header">
   <div class="container container-height">
     <nav class="header-nav">
-      <a href="#header" class="logo">energy.flow</a>
+      <a href="./index.html" class="logo">energy.flow</a>
       <button
         class="header-mobile-btn js-open-menu"
         type="button"
@@ -47,7 +46,11 @@
         </svg>
       </button>
       <div class="header-menu">
-        <a href="../index.html" class="header-btn header-btn-home">Home</a>
+        <a
+          href="./index.html"
+          class="header-btn header-btn-home header-btn-home-active"
+          >Home</a
+        >
         <a href="./favorites.html" class="header-btn header-btn-favorites"
           >Favorites</a
         >
@@ -91,11 +94,11 @@
       </address>
     </nav>
     <!-- Mobile menu -->
-    <div class="mob-menu-container js-menu-container" id="mobile-menu">
+    <!-- <div class="mob-menu-container js-menu-container" id="mobile-menu">
       <a href="#header" class="mob-menu-logo">energy.flow</a>
       <button class="mob-menu-btn-close js-close-menu" type="button">
         <svg class="mob-menu-btn-close-icon" width="20" height="20">
-          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-mob_menu_close"></use>
+          <use href="./img/icons_sprite.svg#icon-mob_menu_close"></use>
         </svg>
       </button>
       <ul class="mob-menu-link">
@@ -118,7 +121,7 @@
               width="28"
               height="28"
             >
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-facebook"></use>
+              <use href="./img/icons_sprite.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -133,7 +136,7 @@
               width="28"
               height="28"
             >
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-instagram"></use>
+              <use href="./img/icons_sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -148,12 +151,12 @@
               width="28"
               height="28"
             >
-              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-youtube"></use>
+              <use href="./img/icons_sprite.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </header>
 
@@ -216,16 +219,16 @@
       </li>
     </ul>
     <ul class="exercises-list js-exercises-list"></ul>
-    <ul class="exercises-numbering-list">
-      <li class="exercises-numbering-item exercises-numbering-item-active">
+    <div class="exercises-numbering-list">
+      <!-- <button class="exercises-numbering-item exercises-numbering-item-active">
         1
-      </li>
-      <li class="exercises-numbering-item">2</li>
-    </ul>
+      </button>
+      <button class="exercises-numbering-item">2</button> -->
+    </div>
   </div>
 </section>
 
-    <section id="sport" class="sport hide">
+    <section id="sport" class="sport">
   <div class="container sport-container">
     <div class="sport-left"></div>
     <div class="sport-right">
@@ -246,7 +249,7 @@
   </div>
 </section>
 
-    <footer id="footer" class="footer hide">
+    <footer id="footer" class="footer">
   <div class="container container-footer">
     <div class="footer-wrap">
       <div class="footer-social-wrap">
@@ -255,10 +258,14 @@
           <li class="social-item">
             <a
               href="https://www.facebook.com/goITclub/"
-              class="social-link"
+              class="social-link social-link-footer"
               target="_blank"
             >
-              <svg class="social-icon" width="28" height="28">
+              <svg
+                class="social-icon social-icon-footer"
+                width="28"
+                height="28"
+              >
                 <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -266,10 +273,14 @@
           <li class="social-item">
             <a
               href="https://www.instagram.com/goitclub/"
-              class="social-link"
+              class="social-link social-link-footer"
               target="_blank"
             >
-              <svg class="social-icon" width="28" height="28">
+              <svg
+                class="social-icon social-icon-footer"
+                width="28"
+                height="28"
+              >
                 <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -277,34 +288,40 @@
           <li class="social-item">
             <a
               href="https://www.youtube.com/c/GoIT"
-              class="social-link"
+              class="social-link social-link-footer"
               target="_blank"
             >
-              <svg class="social-icon" width="28" height="28">
+              <svg
+                class="social-icon social-icon-footer"
+                width="28"
+                height="28"
+              >
                 <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
       </div>
-      <h2 class="footer-title hero-title">
-        Transforming your
-        <span class="title-acent footer-title-acent">body</span> shape with us
-      </h2>
-      <form class="footer-form">
-        <label class="footer-form-label">
-          <span class="footer-form-text"
-            >Subscribe and learn about new exercises!</span
-          >
-          <input
-            type="email"
-            name="user_email"
-            placeholder="Email"
-            class="footer-form-input"
-          />
-        </label>
-        <button type="submit" class="btn-grey">Send</button>
-      </form>
+      <div class="footer-right-wrap">
+        <h2 class="footer-title hero-title">
+          Transforming your
+          <span class="title-acent footer-title-acent">body</span> shape with us
+        </h2>
+        <form class="footer-form">
+          <label class="footer-form-label">
+            <span class="footer-form-text"
+              >Subscribe and learn about new exercises!</span
+            >
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Email"
+              class="footer-form-input"
+            />
+          </label>
+          <button type="submit" class="btn-grey btn-grey-footer">Send</button>
+        </form>
+      </div>
     </div>
     <div class="footer-reserved-wrap">
       <p>Energy Flow. All rights reserved.</p>
