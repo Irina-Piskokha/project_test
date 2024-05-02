@@ -45,7 +45,7 @@
   flex-wrap: wrap;
   width: 199px;
 
-  margin: 319px 0 20px 10px;
+  margin: 317px 0 20px 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -57,7 +57,7 @@
 
 @media only screen and (min-width: 1440px) {
   .hero-left-list {
-    margin: 784px 0 32px 48px;
+    margin: 779px 0 32px 48px;
   }
 }
 
@@ -73,7 +73,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .hero-left-list {
+  .hero-left-item {
     font-size: 16px;
     line-height: 1.5;
     padding: 4px 16px;

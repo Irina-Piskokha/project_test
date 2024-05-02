@@ -7,14 +7,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 20px 0 20px;
-  width: 295px;
+  padding-top: 40px;
+  width: 335px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media only screen and (min-width: 768px) {
   .header-nav {
     width: 736px;
     padding: 48px 32px 0 32px;
+    justify-content: normal;
   }
 }
 
@@ -22,6 +25,7 @@
   .header-nav {
     padding: 40px 48px 0 48px;
     width: 1408px;
+    justify-content: space-between;
   }
 }
 
@@ -35,7 +39,8 @@
 @media only screen and (min-width: 768px) {
   .logo {
     font-size: 28px;
-    line-height: 1;
+    line-height: 0.1;
+    margin-right: 81px;
   }
 }
 
@@ -89,6 +94,7 @@
 @media only screen and (min-width: 1440px) {
   .header-menu {
     margin-right: 0;
+    margin-left: 72px;
   }
 }
 
@@ -99,21 +105,25 @@
   background-color: transparent;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--secondary-cl-text);
 }
 
-.header-btn-home {
-  display: flex;
-  padding: 6px 26px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-
+.header-btn-home-active {
+  color: var(--primary-cl-text);
   border-radius: 30px;
   background: var(--background-secondary);
+  padding: 6px 26px;
 }
 
-.header-btn-favorites {
-  color: var(--secondary-cl-text);
+.header-btn-favorites-active {
+  color: var(--primary-cl-text);
+  border-radius: 30px;
+  background: var(--background-secondary);
+  padding: 6px 14px;
+}
+
+.header-btn-margin {
+  margin-left: 12px;
 }
 
 .social {
@@ -123,6 +133,7 @@
 @media only screen and (min-width: 768px) {
   .social {
     display: block;
+    margin-left: 74px;
   }
 }
 

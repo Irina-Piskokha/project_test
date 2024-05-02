@@ -15,6 +15,10 @@ body {
   display: none;
 }
 
+.is-hidden {
+  visibility: hidden;
+}
+
 input,
 form {
   padding: 0;
@@ -23,8 +27,12 @@ form {
 
 .container {
   width: 100%;
-  padding: 0 20px;
   margin: 0 auto;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -36,7 +44,6 @@ form {
 @media screen and (min-width: 768px) {
   .container {
     width: 736px;
-    padding: 0 16px;
   }
 }
 
