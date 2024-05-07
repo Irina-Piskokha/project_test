@@ -7,22 +7,24 @@ const currentData = format(new Date(), 'P');
 localStorage.setItem('quoteData', JSON.stringify(currentData));
 
 document.addEventListener('DOMContentLoaded', () => {
-  // беремо данні з LS
+  // беремо данні дати з LS
   const jsonValue = localStorage.getItem('quoteData');
   const dataValue = JSON.parse(jsonValue);
+  // беремо данні об'єкта з LS
+  const jsonObj = localStorage.getItem('quoteValue');
+  const valueObj = JSON.parse(jsonObj);
 
-  if (localStorage.getItem('ключ') === null && dataValue !== currentData) {
-    getQuote().then(result => {
-      console.log(result);
-      let markup = createMarkup(result);
-      refs.quoteWrap.innerHTML = markup;
-      localStorage.setItem('quoteValue', JSON.stringify(result)).catch(() => {
+  if (localStorage.getItem('quoteValue') === null) {
+    getQuote()
+      .then(result => {
+        let markup = createMarkup(result);
+        refs.quoteWrap.innerHTML = markup;
+        localStorage.setItem('quoteValue', JSON.stringify(result));
+      })
+      .catch(() => {
         refs.quoteWrap.innerHTML = 'Sorry';
       });
-    });
   } else {
-    const jsonObj = localStorage.getItem('quoteValue');
-    const valueObj = JSON.parse(jsonObj);
     let markup = createMarkup(valueObj);
     refs.quoteWrap.innerHTML = markup;
   }
