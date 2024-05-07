@@ -90,6 +90,10 @@
   fill: var(--secondary-cl-text);
 }
 
+.social-icon-footer:focus {
+  fill: var(--secondary-cl-text);
+}
+
 @media only screen and (min-width: 1440px) {
   .footer-right-wrap {
     display: contents;

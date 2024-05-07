@@ -8,19 +8,3 @@
 @import url('./sport.css');
 @import url('./footer.css');
 @import url('./favorites.css');
-
-/* :root {
-  font-family: 'DM Sans';
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-} */
