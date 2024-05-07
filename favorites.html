@@ -25,8 +25,9 @@
     />
     <!-- Custom styles -->
     
-    <script type="module" crossorigin src="/project_test/assets/main-5e51b57b.js"></script>
-    <link rel="stylesheet" href="/project_test/assets/main-239072f3.css">
+    <script type="module" crossorigin src="/project_test/assets/vendor-f7bc3383.js"></script>
+    <script type="module" crossorigin src="/project_test/assets/main-e53e8d8a.js"></script>
+    <link rel="stylesheet" href="/project_test/assets/main-628eb5d2.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -96,19 +97,19 @@
       </address>
     </nav>
     <!-- Mobile menu -->
-    <!-- <div class="mob-menu-container js-menu-container" id="mobile-menu">
+    <div class="mob-menu-container js-menu-container" id="mobile-menu">
       <a href="#header" class="mob-menu-logo">energy.flow</a>
       <button class="mob-menu-btn-close js-close-menu" type="button">
         <svg class="mob-menu-btn-close-icon" width="20" height="20">
-          <use href="./img/icons_sprite.svg#icon-mob_menu_close"></use>
+          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-mob_menu_close"></use>
         </svg>
       </button>
       <ul class="mob-menu-link">
         <li class="mob-menu-item">
-          <a href="#" class="mob-menu-link active">Home</a>
+          <a href="./index.html" class="mob-menu-link active">Home</a>
         </li>
         <li class="mob-menu-item">
-          <a href="#" class="mob-menu-link">Favorites</a>
+          <a href="./favorites.html" class="mob-menu-link">Favorites</a>
         </li>
       </ul>
       <ul class="mob-menu-social-list">
@@ -123,7 +124,7 @@
               width="28"
               height="28"
             >
-              <use href="./img/icons_sprite.svg#icon-facebook"></use>
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
@@ -138,7 +139,7 @@
               width="28"
               height="28"
             >
-              <use href="./img/icons_sprite.svg#icon-instagram"></use>
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -153,12 +154,12 @@
               width="28"
               height="28"
             >
-              <use href="./img/icons_sprite.svg#icon-youtube"></use>
+              <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-youtube"></use>
             </svg>
           </a>
         </li>
       </ul>
-    </div> -->
+    </div>
   </div>
 </header>
 
@@ -228,6 +229,76 @@
                     </div>
                 </div>
             </li>
+            <li class="favorites-item">
+              <div class="item-head-wrap">
+                  <p class="favorites-category">WORKOUT</p>
+                  <button type="button" class="favorites-btn-del">
+                      <svg class="favorites-icon-del" width="16" height="16">
+                          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-trash"></use>
+                      </svg>
+                  </button>
+                  <button type="button" class="favorites-btn-start">Start
+                      <svg class="favorites-btn-icon" width="16" height="16">
+                        <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-arrow"></use>
+                      </svg>
+                  </button>
+              </div>
+              <div class="item-main-wrap">
+                  <svg class="favorites-icon-run" width="24" height="24">
+                    <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-run-man"></use>
+                  </svg>
+                  <h3 class="item-title">Air bike</h3>
+              </div>
+              <div class="item-footer-wrap">
+                  <div class="item-footer-flex">
+                      <p class="item-footer-name">Burned calories:</p>
+                      <p class="item-footer-text">312 / 3 min</p>
+                  </div>
+                  <div class="item-footer-flex">
+                      <p class="item-footer-name">Body part:</p>
+                      <p class="item-footer-text">Waist</p>
+                  </div>
+                  <div class="item-footer-flex">
+                      <p class="item-footer-name">Target:</p>
+                      <p class="item-footer-text">Abs</p>
+                  </div>
+              </div>
+          </li>
+            <li class="favorites-item">
+              <div class="item-head-wrap">
+                  <p class="favorites-category">WORKOUT</p>
+                  <button type="button" class="favorites-btn-del">
+                      <svg class="favorites-icon-del" width="16" height="16">
+                          <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-trash"></use>
+                      </svg>
+                  </button>
+                  <button type="button" class="favorites-btn-start">Start
+                      <svg class="favorites-btn-icon" width="16" height="16">
+                        <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-arrow"></use>
+                      </svg>
+                  </button>
+              </div>
+              <div class="item-main-wrap">
+                  <svg class="favorites-icon-run" width="24" height="24">
+                    <use href="/project_test/assets/icons_sprite-2b0ebbe0.svg#icon-run-man"></use>
+                  </svg>
+                  <h3 class="item-title">Air bike</h3>
+              </div>
+              <div class="item-footer-wrap">
+                  <div class="item-footer-flex">
+                      <p class="item-footer-name">Burned calories:</p>
+                      <p class="item-footer-text">312 / 3 min</p>
+                  </div>
+                  <div class="item-footer-flex">
+                      <p class="item-footer-name">Body part:</p>
+                      <p class="item-footer-text">Waist</p>
+                  </div>
+                  <div class="item-footer-flex">
+                      <p class="item-footer-name">Target:</p>
+                      <p class="item-footer-text">Abs</p>
+                  </div>
+              </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -235,6 +306,12 @@
 </section>
  
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     
   </body>
 </html>
