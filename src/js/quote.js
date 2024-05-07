@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         refs.quoteWrap.innerHTML = 'Sorry';
       });
   } else {
-    const jsonObj = localStorage.getItem('quoteValue');
+    const jsonObj = localStorage.getItem('quoteValue') ?? '';
     const valueObj = JSON.parse(jsonObj);
     let markup = createMarkup(valueObj);
     refs.quoteWrap.innerHTML = markup;
