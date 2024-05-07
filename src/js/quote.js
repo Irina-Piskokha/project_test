@@ -11,23 +11,39 @@ document.addEventListener('DOMContentLoaded', () => {
   const jsonValue = localStorage.getItem('quoteData');
   const dataValue = JSON.parse(jsonValue);
 
-  if (dataValue !== currentData) {
-    getQuote()
-      .then(result => {
-        console.log(result);
-        let markup = createMarkup(result);
-        refs.quoteWrap.innerHTML = markup;
-        localStorage.setItem('quoteValue', JSON.stringify(result));
-      })
-      .catch(() => {
+  if (localStorage.getItem('ключ') === null && dataValue !== currentData) {
+    getQuote().then(result => {
+      console.log(result);
+      let markup = createMarkup(result);
+      refs.quoteWrap.innerHTML = markup;
+      localStorage.setItem('quoteValue', JSON.stringify(result)).catch(() => {
         refs.quoteWrap.innerHTML = 'Sorry';
       });
+    });
   } else {
-    const jsonObj = localStorage.getItem('quoteValue') ?? '';
+    const jsonObj = localStorage.getItem('quoteValue');
     const valueObj = JSON.parse(jsonObj);
     let markup = createMarkup(valueObj);
     refs.quoteWrap.innerHTML = markup;
   }
+
+  // if (dataValue !== currentData) {
+  //   getQuote()
+  //     .then(result => {
+  //       console.log(result);
+  //       let markup = createMarkup(result);
+  //       refs.quoteWrap.innerHTML = markup;
+  //       localStorage.setItem('quoteValue', JSON.stringify(result));
+  //     })
+  //     .catch(() => {
+  //       refs.quoteWrap.innerHTML = 'Sorry';
+  //     });
+  // } else {
+  //   const jsonObj = localStorage.getItem('quoteValue');
+  //   const valueObj = JSON.parse(jsonObj);
+  //   let markup = createMarkup(valueObj);
+  //   refs.quoteWrap.innerHTML = markup;
+  // }
 });
 
 function createMarkup({ author, quote }) {
